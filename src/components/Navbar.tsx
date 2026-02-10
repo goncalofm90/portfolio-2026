@@ -1,12 +1,12 @@
-export function Nav() {
+export function Navbar() {
   return (
     <nav
-      style={{ backgroundColor: "rgba(11,17,32,0.85)" }}
-      className="border-b border-[#1F2937]"
+      style={{ backgroundColor: "rgba(11,17,32)" }}
+      className="sticky top-0 z-50 border-b border-[#1F2937]"
     >
-      <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="max-w-6xl mx-auto px-6 py-4 flex justify-end items-center">
         <div className="flex gap-8">
-          {["work", "about", "contact"].map((id) => (
+          {["about", "work", "contact"].map((id) => (
             <a
               key={id}
               href={`#${id}`}
