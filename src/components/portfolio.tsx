@@ -10,7 +10,10 @@ export default function Portfolio() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    setIsLoaded(true);
+    // Run after the first paint
+    requestAnimationFrame(() => {
+      setIsLoaded(true);
+    });
 
     const link = document.createElement("link");
     link.href =
