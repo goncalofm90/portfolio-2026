@@ -44,8 +44,8 @@ export const Contact = () => {
             Let's Work Together
           </h2>
           <p className="text-white/80 text-lg md:text-xl relative z-10">
-            I'm currently available for freelance projects or collaborations.
-            Reach out and let's build something amazing!
+            I'm currently available for new projects or collaborations. Reach
+            out and let's build something amazing!
           </p>
         </div>
 
