@@ -14,7 +14,7 @@ import {
   SiKubernetes,
 } from "react-icons/si";
 
-export const TechStackScroller = ({ size = 42, speed = 25 }) => {
+export const TechStackScroller = ({ size = 42 }) => {
   const stackIcons = [
     FaReact,
     FaNodeJs,

@@ -209,7 +209,7 @@ export default function Portfolio() {
 
       {/* TECH SCROLLER */}
       <div className="fixed bottom-0 left-0 w-full z-50">
-        <TechStackScroller size={26} speed={30} />
+        <TechStackScroller size={26} />
       </div>
     </div>
   );
