@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
-import { Github, Linkedin, Mail, Contact, ChevronRight } from "lucide-react";
+import { Github, Linkedin, Mail, FileText, ChevronRight } from "lucide-react";
 import avatar from "../assets/avatar.jpg";
 import { TechStackScroller } from "./ui/tech-stack-scroller";
 import { Projects } from "./projects";
 import { Contact as ContactSection } from "./contact";
+import { Navbar } from "./navbar";
 
 export default function Portfolio() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -20,35 +21,17 @@ export default function Portfolio() {
 
   return (
     <div
-      className="min-h-screen overflow-x-hidden"
+      className="min-h-screen"
       style={{
         backgroundColor: "#0B1120",
         fontFamily: "'Archivo Narrow', sans-serif",
       }}
     >
       {/* NAV */}
-      <nav
-        style={{ backgroundColor: "rgba(11,17,32,0.85)" }}
-        className="border-b border-[#1F2937]"
-      >
-        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-end items-center">
-          <div className="flex gap-8">
-            {["work", "about", "contact"].map((id) => (
-              <a
-                key={id}
-                href={`#${id}`}
-                className="text-white/80 hover:text-white transition-colors relative group capitalize"
-              >
-                {id}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#1BE7FF] transition-all duration-300 group-hover:w-full"></span>
-              </a>
-            ))}
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* HERO */}
-      <section className="pt-32 pb-20 px-6 relative overflow-hidden">
+      <section className="pt-32 pb-20 px-6 relative overflow-hidden" id="about">
         {/* GRID TEXTURE */}
         <svg className="absolute inset-0 w-full h-full opacity-[0.04] pointer-events-none">
           <defs>
@@ -154,7 +137,7 @@ export default function Portfolio() {
                   link: "https://www.linkedin.com/in/goncalo-mendes/",
                 },
                 { icon: Mail, link: "mailto:goncalofm90@gmail.com" },
-                { icon: Contact, link: "/CVGM2026.pdf" },
+                { icon: FileText, link: "/CVGM2026.pdf" },
               ].map(({ icon: Icon, link }, i) => (
                 <a
                   key={i}
