@@ -4,7 +4,7 @@ import avatar from "../assets/avatar.jpg";
 import { TechStackScroller } from "./ui/tech-stack-scroller";
 import { Projects } from "./projects";
 import { Contact as ContactSection } from "./contact";
-import { Navbar } from "./navbar";
+import { Navbar } from "./Navbar";
 
 export default function Portfolio() {
   const [isLoaded, setIsLoaded] = useState(false);
