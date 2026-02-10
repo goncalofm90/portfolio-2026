@@ -1,4 +1,6 @@
 @import "tailwindcss";
+
+/* ---  animations --- */
 @keyframes float {
   0%,
   100% {
@@ -31,4 +33,52 @@
 }
 .group-hover\:animate-draw:hover {
   animation: draw 1.2s ease forwards;
+}
+
+/* Slow spin */
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin-slow {
+  animation: spin-slow 60s linear infinite;
+}
+
+/* Slow pulse (scale + opacity) */
+@keyframes pulse-slow {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.3;
+  }
+}
+.animate-pulse-slow {
+  animation: pulse-slow 8s ease-in-out infinite;
+}
+
+/* Slow vertical bounce */
+@keyframes bounce-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.animate-bounce-slow {
+  animation: bounce-slow 6s ease-in-out infinite;
+}
+
+/* Optional delay utility */
+.delay-200 {
+  animation-delay: 2s;
 }

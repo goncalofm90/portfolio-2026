@@ -3,6 +3,7 @@ import { Github, Linkedin, Mail, Contact, ChevronRight } from "lucide-react";
 import avatar from "../assets/avatar.jpg";
 import { TechStackScroller } from "./ui/tech-stack-scroller";
 import { Projects } from "./projects";
+import { Contact as ContactSection } from "./contact";
 
 export default function Portfolio() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -16,30 +17,6 @@ export default function Portfolio() {
     link.rel = "stylesheet";
     document.head.appendChild(link);
   }, []);
-
-  const projects = [
-    {
-      title: "E-Commerce Platform",
-      description:
-        "Full-stack online shopping experience with cart and checkout",
-      tech: ["React", "Node.js", "MongoDB"],
-    },
-    {
-      title: "Task Manager",
-      description: "Collaborative project management tool for teams",
-      tech: ["Vue.js", "Firebase", "Tailwind"],
-    },
-    {
-      title: "Weather App",
-      description: "Real-time weather dashboard with location search",
-      tech: ["React", "API", "Charts"],
-    },
-    {
-      title: "Portfolio Builder",
-      description: "Generate custom developer portfolios",
-      tech: ["Next.js", "TypeScript"],
-    },
-  ];
 
   return (
     <div
@@ -235,34 +212,7 @@ export default function Portfolio() {
       <Projects />
 
       {/* CONTACT */}
-      <section
-        id="contact"
-        className="py-20 px-6 text-center"
-        style={{ backgroundColor: "#0F172A" }}
-      >
-        <h2 className="text-5xl font-bold mb-6 text-white">
-          Let's Work Together
-        </h2>
-
-        <a
-          href="mailto:hello@goncalomendes.dev"
-          className="relative inline-flex items-center justify-center px-12 py-5 text-lg font-semibold overflow-hidden group"
-        >
-          <span className="absolute inset-0 bg-[#1BE7FF] transition-transform duration-500 group-hover:scale-110"></span>
-          <span className="relative flex items-center gap-3 text-[#00241B]">
-            Send me an email
-            <svg
-              className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-2"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-            >
-              <path d="M5 12h14M13 6l6 6-6 6" />
-            </svg>
-          </span>
-        </a>
-      </section>
+      <ContactSection />
 
       {/* TECH SCROLLER */}
       <div className="fixed bottom-0 left-0 w-full z-50">
