@@ -31,8 +31,7 @@ export default function Portfolio() {
         style={{ backgroundColor: "rgba(11,17,32,0.85)" }}
         className="border-b border-[#1F2937]"
       >
-        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="text-xl font-bold text-white">GM</div>
+        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-end items-center">
           <div className="flex gap-8">
             {["work", "about", "contact"].map((id) => (
               <a
@@ -160,11 +159,18 @@ export default function Portfolio() {
                 <a
                   key={i}
                   href={link}
-                  className="relative group"
+                  className={`relative group transition-all duration-700 ${
+                    isLoaded ? "opacity-100 scale-100" : "opacity-0 scale-0"
+                  }`}
+                  style={{
+                    transitionDelay: `${600 + i * 150}ms`,
+                    transitionTimingFunction:
+                      "cubic-bezier(0.34, 1.70, 0.44, 1)",
+                  }}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="absolute inset-0  bg-[#1BE7FF] opacity-0   transition duration-500"></span>
+                  <span className="absolute inset-0  opacity-0 group-hover:opacity-20 transition duration-500 rounded"></span>
                   <Icon className="relative w-5 h-5 text-white group-hover:text-[#1BE7FF] transition" />
                 </a>
               ))}
@@ -173,7 +179,11 @@ export default function Portfolio() {
 
           {/* AVATAR */}
           <div
-            className={`flex justify-center md:justify-end transition-all duration-1000 delay-300 ${isLoaded ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
+            className={`flex justify-center md:justify-end transition-all duration-1000 delay-300 ${
+              isLoaded
+                ? "opacity-100 scale-100 animate-slideIn"
+                : "opacity-0 scale-95"
+            }`}
           >
             <div className="relative w-72 h-72">
               {/* Subtle rotated colored background */}
