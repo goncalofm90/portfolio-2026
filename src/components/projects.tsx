@@ -3,6 +3,7 @@ import type { SlideData } from "./project-data";
 
 import {
   Foodi3,
+  VelvetBrew,
   MonarchCocktailBar,
   SteveTearle,
   HellOnEarth,
@@ -101,6 +102,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
 export const Projects = () => {
   const projects: (SlideData & { video?: string })[] = [
     { ...Foodi3, video: "/videos/test.mp4" },
+    { ...VelvetBrew, video: "/videos/velvetbrew.mp4" },
     { ...MonarchCocktailBar, video: "/videos/funny.mp4" },
     { ...SteveTearle, video: "/videos/portfolio.mp4" },
     { ...HellOnEarth, video: "/videos/hellonearth.mp4" },

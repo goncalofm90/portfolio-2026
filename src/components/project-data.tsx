@@ -4,6 +4,7 @@ import alexmoraisbass from "../assets/bass.avif";
 import stevetearl from "../assets/steve.avif";
 import reeldock from "../assets/reeldock.avif";
 import foodi3 from "../assets/foodi3.jpg";
+import velvetbrew from "../assets/velvetbrew.jpg";
 
 export interface SlideData {
   title: string;
@@ -17,6 +18,13 @@ export const Foodi3: SlideData = {
   button: "Explore",
   src: foodi3,
   url: "https://foodi3.appwrite.network/auth",
+};
+
+export const VelvetBrew: SlideData = {
+  title: "Velvet Brew",
+  button: "Explore",
+  src: velvetbrew,
+  url: "https://velvet-brew-landing.vercel.app/",
 };
 
 export const MonarchCocktailBar: SlideData = {
