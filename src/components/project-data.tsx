@@ -52,7 +52,7 @@ export const AlexMoraisBass: SlideData = {
   title: "Alex Morais Bass",
   button: "Explore",
   src: alexmoraisbass,
-  url: "https://alexmoraisbass.netlify.app/",
+  url: "https://alexandre-morais-bass.vercel.app/",
 };
 
 export const ReelDock: SlideData = {
