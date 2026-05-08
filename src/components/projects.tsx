@@ -5,7 +5,7 @@ import {
   Foodi3,
   VelvetBrew,
   MonarchCocktailBar,
-  SteveTearle,
+  SandraLemos,
   HellOnEarth,
   AlexMoraisBass,
   ReelDock,
@@ -105,7 +105,7 @@ export const Projects = () => {
     { ...AlexMoraisBass, video: "/videos/bass.mp4" },
     { ...VelvetBrew, video: "/videos/velvetbrew.mp4" },
     { ...MonarchCocktailBar, video: "/videos/funny.mp4" },
-    { ...SteveTearle, video: "/videos/portfolio.mp4" },
+    { ...SandraLemos, video: "/videos/portfolio.mp4" },
     { ...HellOnEarth, video: "/videos/hellonearth.mp4" },
     { ...ReelDock, video: "/videos/reeldock.mp4" },
   ];
