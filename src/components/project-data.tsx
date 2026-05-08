@@ -1,7 +1,7 @@
 import monarch from "../assets/monarch.jpg";
 import hellonearth from "../assets/hellonearth.png";
 import alexmoraisbass from "../assets/bass.avif";
-import stevetearl from "../assets/steve.avif";
+import sandralemos from "../assets/sandra.avif";
 import reeldock from "../assets/reeldock.avif";
 import foodi3 from "../assets/foodi3.jpg";
 import velvetbrew from "../assets/velvetbrew.jpg";
@@ -34,11 +34,11 @@ export const MonarchCocktailBar: SlideData = {
   url: "https://the-monarch-cocktail-bar.vercel.app/",
 };
 
-export const SteveTearle: SlideData = {
-  title: "Steve Tearle Portfolio App",
+export const SandraLemos: SlideData = {
+  title: "Sandra Lemos UX/UI Portfolio",
   button: "Explore",
-  src: stevetearl,
-  url: "https://stevetearle.com/",
+  src: sandralemos,
+  url: "https://portfolio-sandra-lemos.vercel.app/",
 };
 
 export const HellOnEarth: SlideData = {
